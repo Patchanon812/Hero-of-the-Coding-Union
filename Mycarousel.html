@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My carosel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+<!-- Fixed Button มุมล่างขวา (เช่น ปุ่ม Chat) -->
+<button class="position-fixed bottom-0 end-0 m-4 btn btn-primary rounded-circle" style="width:
+56px; height:56px;">
+    <i class="bi bi-chat-fill"></i>
+</button>
+<!-- Badge ซ้อนบน Icon (Absolute บน Relative) -->
+<div class="position-relative d-inline-block">
+    <i class="bi bi-bell fs-3"></i>
+    <span class="position-absolute top-0 start-100 translate-middle
+                 badge rounded-pill bg-danger">
+        5
+    </span>
+</div>
+
+<!-- Carousel พื้นฐาน -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators (จุดบอกสไลด์) -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://picsum.photos/800/400?random=1" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>สไลด์ที่ 1</h5>
+                <p>คำอธิบายสไลด์แรก</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/800/400?random=2" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="https://picsum.photos/800/400?random=3" class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- ปุ่มเลื่อน -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+
+<div class="accordion" id="myAccordion">
+
+    <!-- Item 1 (เปิดอยู่ตั้งแต่แรก) -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#item1">
+                หัวข้อที่ 1
+            </button>
+        </h2>
+        <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+                เนื้อหาของหัวข้อที่ 1
+            </div>
+        </div>
+    </div>
+
+    <!-- Item 2 (ปิดอยู่) -->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item2">
+                หัวข้อที่ 2
+            </button>
+        </h2>
+        <div id="item2" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+            <div class="accordion-body">
+                เนื้อหาของหัวข้อที่ 2
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<table class="table table-striped table-hover">
+    <thead class="table-primary">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">ชื่อ</th>
+            <th scope="col">วิชา</th>
+            <th scope="col">คะแนน</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>my bro</td>
+            <td>เว็บเทคโนโลยี</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>my me</td>
+            <td>เว็บเทคโนโลยี</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>the dog</td>
+            <td>เว็บเทคโนโลยี</td>
+            <td>95</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- List Group พื้นฐาน -->
+<ul class="list-group">
+    <li class="list-group-item">Item 1</li>
+    <li class="list-group-item active">Item 2 (Active)</li>
+    <li class="list-group-item disabled">Item 3 (Disabled)</li>
+</ul>
+
+<!-- List Group แบบ Numbered -->
+<ol class="list-group list-group-numbered">
+    <li class="list-group-item">รายการที่ 1</li>
+    <li class="list-group-item">รายการที่ 2</li>
+</ol>
+
+<!-- List Group พร้อม Badge -->
+<ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        ข้อความที่ยังไม่ได้อ่าน
+        <span class="badge text-bg-primary rounded-pill">14</span>
+    </li>
+</ul>
+
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active">หน้าแรก</a>
+    <a href="#" class="list-group-item list-group-item-action">เกี่ยวกับเรา</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+        ผลงาน (สีเขียว)
+    </a>
+</div>
+
+<!-- object-fit-cover: ครอบเต็ม ตัดส่วนเกิน (นิยมที่สุด) -->
+<img src="data:image/jpeg;base64,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" class="object-fit-cover"
+     style="width:50%; height:300px;">
+
+<!-- object-fit-contain: แสดงเต็มรูป มีพื้นที่ว่าง -->
+<img src="photo.jpg" class="object-fit-contain"
+     style="width:100%; height:200px;">
+
+<!-- object-fit-fill: ยืดให้เต็ม (อาจบิดเบี้ยว) -->
+<img src="photo.jpg" class="object-fit-fill"
+     style="width:100%; height:200px;">
+
+<!-- object-fit-scale-down: เลือกเล็กที่สุดระหว่าง none และ contain -->
+<img src="photo.jpg" class="object-fit-scale-down"
+     style="width:100%; height:200px;">
+
+<!-- ใช้กับ Card Image ให้ทุก Card สูงเท่ากัน -->
+<div class="card">
+    <img src="photo.jpg" class="card-img-top object-fit-cover" style="height:180px;">
+    <div class="card-body">...</div>
+</div>
+</html>
