@@ -1,169 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaf & Bean Café</title>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Union Restaurant | Silpakorn University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    </style>
 </head>
+
 <body>
-    <ul class="nav nav-pills">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-</ul>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Brand</a>
-        <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#darkNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="darkNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" 
-                       role="button" data-bs-toggle="dropdown">
-                        Services
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Web Design</a></li>
-                        <li><a class="dropdown-item" href="#">Development</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">SEO</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- Search Form -->
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
-    <!-- ═══ Header ═══ -->
-    <header  id="top">
-        <h1 >🍃 Leaf & Bean Café</h1>
-        <nav >
-            <a href="#menu">เมนู</a>
-            <a href="#about">เกี่ยวกับเรา</a>
-            <a href="#contact">ติดต่อ</a>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-4">คอลัมน์ 1 (4/12)</div>
-            <div class="col-4">คอลัมน์ 2 (4/12)</div>
-            <div class="col-4">คอลัมน์ 3 (4/12)</div>
-        </div>
-    </div>
-    <!-- ═══ Main ═══ -->
-    <main>
-        <section >
-            <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
-            <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
-        </section>
-
-        <section id="menu">
-            <h2 >เมนูแนะนำ</h2>
+    <header>
+        <nav style="border-bottom: 2px solid #007A6D;" class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
             <div class="container">
-                <div class="row">
-                <div class="col-12 col-md-6 col-lg-3 rounded shadow-sm">
-                    <h3 >☕ Espresso</h3>
-                    <p >เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
-                    <span >฿55</span>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 rounded shadow-sm">
-                    <h3 >🍵 Matcha Latte</h3>
-                    <p >ชาเขียวเกรดพรีเมียมจากอุจิ</p>
-                    <span >฿75</span>
-                    <span  bestseller>BEST SELLER</span>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 rounded shadow-sm">
-                    <h3 >🧊 Cold Brew</h3>
-                    <p >สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
-                    <span >฿65</span>
-                    <span new>NEW</span>
+                <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                    <img src="/assets/OIP.webp" alt="SU Logo" width="48" height="48" class="me-2">
+                    <div class="d-flex flex-column lh-1">
+                        <span class="fw-bold text-dark mb-1">Union Restaurant</span>
+                        <small class="text-muted fw-light">Sanam Chandra Palace Campus</small>
+                    </div>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link px-3" href="/index.html">หน้าหลัก</a></li>
+
+                        <li class="nav-item dropdown ms-lg-2">
+                            <a class="btn btn-outline-dark rounded-2 px-4 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                เลือกร้านอาหาร
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end border-0 shadow-sm rounded-3 mt-3 p-2">
+                                <li><a class="dropdown-item rounded" href="https://web-lemon-xi-12.vercel.app/index.html">อ้อยโภชนา</a></li>
+                                <li><a class="dropdown-item rounded" href="/pages/Shop2.html">พี่กุ้ง</a></li>
+                                <li><a class="dropdown-item rounded" href="/pages/Shop3.html">พี่แอน</a></li>
+                                <li><a class="dropdown-item rounded" href="/pages/Shop4.html">พี่ดากุ้งกั้งนมสด</a></li>
+                                <li><a class="dropdown-item rounded" href="/page/ก๋วยเตี๋ยวปลาอินเตอร์.html">ก๋วยเตี๋ยวปลาอินเตอร์</a></li>
+                                <li><a class="dropdown-item rounded" href="/pages/Shop6.html">คุณปลื้ม</a></li>
+                                <li><a class="dropdown-item rounded" href="/pages/Shop7.html">บ้านคุณปู่</a></li>
+                                <li><a class="dropdown-item rounded" href="/pages/Shop8.html">พี่มร</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </nav>
+    </header>
 
-        <div >
-            <article id="about">
-                <h2 >เรื่องราวของเรา</h2>
-                <p>Leaf & Bean Café เกิดจากความรักในกาแฟ
-                ของกลุ่มเพื่อนชาวศิลปากร ที่อยากสร้างพื้นที่
-                สบาย ๆ ให้ทุกคนได้มานั่งจิบกาแฟดี ๆ</p>
-                <figure>
-                    <img src="cafe-interior.jpg"
-                         alt="บรรยากาศภายใน Leaf & Bean Café">
-                    <figcaption>บรรยากาศสบาย ๆ ภายในร้าน</figcaption>
-                </figure>
-            </article>
+    <main class="pt-5 mt-4">
+        <div class="container my-5">
 
-            <aside >
-                <h3>🕐 เวลาเปิด-ปิด</h3>
-                <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
-                <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
-                <h3>📍 ที่ตั้ง</h3>
-                <p>หน้า ม.ศิลปากร วิทยาเขตสนามจันทร์</p>
-            </aside>
+            <section class="py-5 text-center">
+                <h2 class="fw-bold">แนะนำร้านอาหาร</h2>
+                <p class="text-muted">เลือกชมเมนูและรายละเอียดของร้านค้าต่างๆ ในโรงอาหารยูเนี่ยนได้ที่เมนูด้านบน</p>
+            </section>
+
+            <div id="p-kung-carousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#p-kung-carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#p-kung-carousel" data-bs-slide-to="1"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/Union.jpg" class="d-block w-100" alt="ร้านอาหารยูเนี่ยน 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>ยินดีต้อนรับสู่ Union Restaurant</h5>
+                            <p>แหล่งรวมความอร่อย ณ ทับแก้ว</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/Unio2.jpg" class="d-block w-100" alt="ร้านอาหารยูเนี่ยน 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>คัดสรรร้านเด็ด</h5>
+                            <p>รวมร้านอาหารยอดนิยมเพื่อชาวศิลปากร</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#p-kung-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#p-kung-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </div>
     </main>
 
-    <!-- ═══ Footer ═══ -->
-    <footer  id="contact">
-        <p>&copy; 2026 Leaf & Bean Café. All rights reserved.</p>
-        <p>📧 hello@leafandbean.cafe | ☎ 034-XXX-XXX</p>
+    
+    <footer class="bg-white text-black pt-5 pb-4 mt-5">
+        <div class="container text-center text-md-start">
+            <hr class="mb-4" style="opacity: 0.1; border-bottom: 2px solid #007A6D;">
+
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                        <h5 class="text-uppercase mb-4 fw-bold" style="color: #007A6D;">Union Restaurant</h5>
+                        <p class="small text-secondary">
+                            แหล่งรวมอาหารอร่อยและมีคุณภาพ สำหรับนักศึกษาและบุคลากร 
+                            มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ (ทับแก้ว)
+                        </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <p class="small mb-0">© 2026 <strong>Union Restaurant</strong> | All Rights Reserved.</p>
+                </div>
+                
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<button class="btn btn-primary">Primary Button</button>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">Item 1</div>
-        <div class="col-12 col-md-6 col-lg-3">Item 2</div>
-        <div class="col-12 col-md-6 col-lg-3">Item 3</div>
-        <div class="col-12 col-md-6 col-lg-3">Item 4</div>
-    </div>
-</div>
-<!-- Heading Classes -->
-<p class="h1">h1. Bootstrap heading</p>
-<p class="h2">h2. Bootstrap heading</p>
-<p class="h3">h3. Bootstrap heading</p>
-
-<!-- Display Headings (ใหญ่กว่าปกติ) -->
-<h1 class="display-1">Display 1</h1>
-<h1 class="display-4">Display 4</h1>
-
-<p class="text-primary">Primary</p>
-<p class="text-success">Success</p>
-<p class="text-danger">Danger</p>
-<p class="text-warning">Warning</p>
-<p class="text-info">Info</p>
-<p class="text-muted">Muted</p>
-
-<div class="bg-danger text-white">Primary BG</div>
-<div class="bg-light text-white">Success BG</div>
-<div class="bg-primary text-dark">Light BG</div>
-<div class="bg-light text-white">Dark BG</div>
-<div class="bg-danger text-white">Primary BG</div>
-
-
 
 </html>
